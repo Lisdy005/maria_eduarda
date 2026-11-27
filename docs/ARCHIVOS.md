@@ -18,6 +18,8 @@ Se enumeran los archivos entregados, no las carpetas temporales de compilación.
 |`docs/LICENCIAS-WEKA-LIB.txt`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/PRUEBAS.md`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/TERCEROS.md`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/img/gui_1_entrenar.png`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/img/gui_2_orientacion.png`|Documentación, contrato de datos, plantilla o licencia.|
 |`entrega/SHA256SUMS.txt`|Manifiesto de integridad SHA-256.|
 |`entrega/diagnosticador-canino.jar`|4 · Aplicación ejecutable con Weka 3.8.5.|
 |`entrega/proyecto-completo.zip`|Paquete completo descargable; no se incluye dentro de sí mismo.|
@@ -38,15 +40,18 @@ Se enumeran los archivos entregados, no las carpetas temporales de compilación.
 |`resultados/confusion_NaiveBayes.csv`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/confusion_NaiveBayes.svg`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/ejecucion.txt`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
+|`resultados/maven_verify.txt`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/metricas.md`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/metricas_globales.csv`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/metricas_por_clase.csv`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/pliegues.csv`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/predicciones.csv`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
+|`resultados/prueba_gui.txt`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/pruebas.txt`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/pruebas_java11.txt`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/weka_J48.txt`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
 |`resultados/weka_NaiveBayes.txt`|3 · Resultado ejecutado, gráfico o evidencia de verificación.|
+|`scripts/PruebaGui.java`|4 · Código completo Java / pruebas automatizadas.|
 |`scripts/actualizar_informe.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/crear_entrega.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/empaquetar_jar.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|

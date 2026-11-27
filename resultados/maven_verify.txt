@@ -1,0 +1,22 @@
+# mvn -B clean verify — 2026-11-27 — Apache Maven 3.9.11 (3e54c93a704957b63ee3494413a2b544fd3d825b) — Java openjdk version "21.0.13.1" 2026-11-17
+[INFO] ------------------< edu.canino:diagnosticador-canino >------------------
+[INFO] Building Orientador canino educativo 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] --- clean:3.2.0:clean (default-clean) @ diagnosticador-canino ---
+[INFO] --- resources:3.3.1:resources (default-resources) @ diagnosticador-canino ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ diagnosticador-canino ---
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ diagnosticador-canino ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ diagnosticador-canino ---
+[INFO] --- surefire:3.5.2:test (default-test) @ diagnosticador-canino ---
+[INFO] -------------------------------------------------------
+[INFO] -------------------------------------------------------
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 s -- in edu.canino.ProjectTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] --- jar:3.4.1:jar (default-jar) @ diagnosticador-canino ---
+[INFO] Building jar: target/diagnosticador-canino.jar
+[INFO] --- shade:3.6.0:shade (default) @ diagnosticador-canino ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.095 s
+[INFO] ------------------------------------------------------------------------

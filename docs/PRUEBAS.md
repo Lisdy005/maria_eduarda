@@ -14,6 +14,9 @@
 | Cargar modelo entrenado en Java 21 desde Java 11 | Inferencia correcta | `resultados/ejecucion.txt` |
 | Auditor independiente de CSV | Matrices, accuracy, P/R/F1, pliegues y probabilidades consistentes | `resultados/auditoria.txt` |
 | Errores por comando/síntoma/modelo inexistente | Fallo explícito, sin predicción fabricada | JUnit y comprobación CLI |
+| **`mvn -B clean verify`** (Maven 3, JDK 21, `release 11`) | **BUILD SUCCESS, 12/12 pruebas**; JAR con Shade generado | `resultados/maven_verify.txt` |
+| Reproducción completa con el JAR de Maven | ARFF idéntico byte a byte; los 7 CSV y 5 SVG idénticos a los incluidos; auditor correcto | Comparación `cmp` y `scripts/verificar_resultados.py` |
+| **Interfaz Swing real bajo Xvfb** | Ventana abierta, 6 checkboxes marcados, botón pulsado, modelo cargado del disco; muestra `parvovirosis` y las 8 probabilidades | `resultados/prueba_gui.txt`, `docs/img/gui_1_entrenar.png`, `docs/img/gui_2_orientacion.png` |
 
 Las pruebas incluyen generación/hash exactos, balance/binariedad, cabecera equivocada, datos faltantes/vacíos, ida/vuelta de modelos con 128 patrones por algoritmo y distribución normalizada, modelo inexistente, argumentos/comandos/síntomas/algoritmos inválidos y experimento ejecutado dos veces con resultados idénticos. La compatibilidad Java se comprueba por ejecución, no solo declarando el `pom.xml`. Se usó una revisión antigua de Java 11 únicamente porque estaba disponible para comprobar el mínimo; se recomienda instalar un Java actualizado.
 
@@ -27,12 +30,22 @@ java -Dfile.encoding=UTF-8 -jar target/diagnosticador-canino.jar experimento dat
 python3 scripts/verificar_resultados.py
 ```
 
+Prueba automatizada de la interfaz (Linux con `xvfb-run`; en un escritorio normal omita `xvfb-run ...`):
+
+```sh
+mkdir -p target/gui
+javac -cp target/diagnosticador-canino.jar -d target/gui scripts/PruebaGui.java
+xvfb-run -a java --add-opens=java.base/java.lang=ALL-UNNAMED -cp target/diagnosticador-canino.jar:target/gui PruebaGui target/gui
+```
+
+Guarda `gui_1_entrenar.png` y `gui_2_orientacion.png` en `target/gui` y termina con código 0 si la ventana muestra la clase esperada.
+
 Si no dispone de Maven, los mismos comandos de la aplicación se pueden ejecutar contra `entrega/diagnosticador-canino.jar`. El auditor usa solo Python estándar. `scripts/empaquetar_jar.py` es un empaquetador auxiliar y no resuelve ni compila dependencias: requiere clases ya compiladas. El flujo normal Maven resuelve Weka y sus transitivas y usa Shade.
 
 ## Lo que NO se ha ejecutado en este entorno
 
-- **Maven:** no estaba instalado y no hay acceso a Maven Central desde el entorno. No existe un registro local de `mvn verify`; la compilación/pruebas efectivas fueron con ECJ/JUnit y bibliotecas reales. La configuración Maven está incluida y la CI `verify.yml` la ejecutará cuando se publique/dispare, pero no se declara esa CI como aprobada antes de que ocurra.
-- **Interacción visual Swing:** no hay servidor de pantalla. La clase compila, la lógica de entrenamiento/inferencia está probada independientemente de la vista y se comprueba el mensaje para entorno headless. No se afirma prueba de clics, captura de pantalla ni revisión de accesibilidad.
+- **Revisión manual de Swing en escritorio físico:** la prueba automatizada (Xvfb) demuestra que la ventana se construye, que los checkboxes y el botón funcionan y que se muestra la distribución, pero no sustituye una revisión humana de accesibilidad, navegación por teclado, contraste y diálogos de selección de archivos. Use la lista de abajo.
+- **CI de GitHub Actions:** está configurada; su resultado depende de que se ejecute en GitHub y no se declara aquí.
 - **Validación clínica:** no hay datos reales, confirmación por laboratorio, revisión veterinaria, calibración, estudio prospectivo ni rendimiento en pacientes. No se debe usar el prototipo para triage clínico ni para descartar rabia.
 
 ## Lista de comprobación visual en un equipo con escritorio

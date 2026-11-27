@@ -1,0 +1,21 @@
+# Prueba GUI Swing bajo Xvfb (1280x1024) — 2026-11-27 — JAR Maven — modelo modelos/NaiveBayes.model
+# Síntomas marcados: Fiebre, Vómito, Diarrea, Letargo, Pérdida de apetito, Sangre en heces
+=== RESULTADO GUI (NaiveBayes) ===
+Modelo: NaiveBayes | Weka: 3.8.5
+Clase sugerida por el modelo: parvovirosis
+
+Distribución del modelo (NO riesgo clínico ni certeza diagnóstica):
+parvovirosis                    99.25 %
+moquillo                         0.25 %
+rabia                            0.00 %
+otitis                           0.00 %
+parasitosis_intestinal           0.38 %
+traqueobronquitis_infecciosa     0.00 %
+dermatitis_alergica              0.00 %
+leptospirosis                    0.12 %
+
+Incluso un 100 % no confirma enfermedad; un 0 % no la descarta.
+
+DATOS SINTÉTICOS — SIN VALIDACIÓN CLÍNICA. No sustituye al veterinario.
+Ante signos neurológicos, sospecha de rabia/exposición, dificultad respiratoria, sangrado, ictericia o deterioro: atención veterinaria urgente, independientemente del resultado. Si sospecha rabia, evite contacto con saliva y mordeduras y contacte al veterinario/autoridad sanitaria.
+# Código de salida: 0 (0 = clase esperada parvovirosis mostrada en la ventana)

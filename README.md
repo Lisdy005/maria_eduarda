@@ -113,7 +113,13 @@ java -Dfile.encoding=UTF-8 -jar target/diagnosticador-canino.jar gui
 
 ### C. Compatibilidad y validación efectivamente realizada
 
-El entorno de construcción de esta entrega carecía inicialmente de Java/Maven y no permite Maven Central. Se compiló **todo el código real con Eclipse ECJ 3.16 (`-11`)**, Weka **3.8.5** de distribución y JUnit **4.13.2**, y se ejecutaron **12/12 pruebas en Java 11.0.9.1 y Java 21.0.8**, además del experimento y de inferencia desde el JAR. Las clases propias usan bytecode Java 11 (55). El JAR incluido se ensambló con `scripts/empaquetar_jar.py`; Maven Shade es el flujo normal reproducible con red. **No se afirma que Maven ni la interacción visual Swing se hayan ejecutado aquí**: el entorno es sin pantalla. Se incluye CI en Java 11/17/21 para ejecutar Maven al publicar y una lista de comprobación visual en [`docs/PRUEBAS.md`](docs/PRUEBAS.md). El Java 11 antiguo se usó solo para comprobar compatibilidad; instale una revisión actualizada para uso local.
+- **`mvn clean verify` ejecutado: BUILD SUCCESS, 12/12 pruebas** (JDK 21 con `release 11`). Registro: [`resultados/maven_verify.txt`](resultados/maven_verify.txt).
+- Con el JAR de Maven se regeneró el ARFF (idéntico byte a byte), se reentrenaron los modelos y se repitió el experimento: los CSV y SVG coinciden exactamente con los de `resultados/`.
+- **Swing probado con la ventana real** bajo pantalla virtual (Xvfb) con [`scripts/PruebaGui.java`](scripts/PruebaGui.java): marca síntomas, pulsa el botón y lee la clase y las 8 probabilidades. Registro: [`resultados/prueba_gui.txt`](resultados/prueba_gui.txt).
+- Compatibilidad Java 11 comprobada anteriormente con ECJ `-11` y ejecución de las 12 pruebas en Java 11.0.9.1; las clases propias usan bytecode Java 11 (55).
+- Pendiente: revisión manual de accesibilidad/teclado en un escritorio físico ([`docs/PRUEBAS.md`](docs/PRUEBAS.md)) y, por supuesto, cualquier validación clínica.
+
+![Interfaz Swing: modo diagnosticar](docs/img/gui_2_orientacion.png)
 
 En Java moderno, Weka 3.8.5 puede requerir apertura reflectiva: ambos empaquetadores incluyen `Add-Opens: java.base/java.lang` en el manifiesto. Si ejecuta clases con `-cp` en lugar de `-jar`, añada `--add-opens=java.base/java.lang=ALL-UNNAMED`. No necesita este ajuste manual al usar los JAR indicados.
 
