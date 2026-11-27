@@ -1,0 +1,17 @@
+algoritmo,clase,soporte,precision,recall,f1
+J48,parvovirosis,25,0.666667,0.640000,0.653061
+J48,moquillo,25,0.818182,0.720000,0.765957
+J48,rabia,25,0.750000,0.840000,0.792453
+J48,otitis,25,0.600000,0.840000,0.700000
+J48,parasitosis_intestinal,25,0.640000,0.640000,0.640000
+J48,traqueobronquitis_infecciosa,25,0.869565,0.800000,0.833333
+J48,dermatitis_alergica,25,0.473684,0.360000,0.409091
+J48,leptospirosis,25,0.791667,0.760000,0.775510
+NaiveBayes,parvovirosis,25,0.814815,0.880000,0.846154
+NaiveBayes,moquillo,25,0.846154,0.880000,0.862745
+NaiveBayes,rabia,25,0.888889,0.960000,0.923077
+NaiveBayes,otitis,25,0.724138,0.840000,0.777778
+NaiveBayes,parasitosis_intestinal,25,0.833333,0.800000,0.816327
+NaiveBayes,traqueobronquitis_infecciosa,25,0.800000,0.800000,0.800000
+NaiveBayes,dermatitis_alergica,25,0.761905,0.640000,0.695652
+NaiveBayes,leptospirosis,25,1.000000,0.840000,0.913043

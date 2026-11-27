@@ -1,0 +1,32 @@
+
+Correctly Classified Instances         166               83      %
+Incorrectly Classified Instances        34               17      %
+Kappa statistic                          0.8057
+Mean absolute error                      0.0653
+Root mean squared error                  0.1779
+Relative absolute error                 29.8395 %
+Root relative squared error             53.7818 %
+Total Number of Instances              200     
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.880    0.029    0.815      0.880    0.846      0.824    0.982     0.884     parvovirosis
+                 0.880    0.023    0.846      0.880    0.863      0.843    0.985     0.932     moquillo
+                 0.960    0.017    0.889      0.960    0.923      0.912    0.998     0.988     rabia
+                 0.840    0.046    0.724      0.840    0.778      0.746    0.977     0.803     otitis
+                 0.800    0.023    0.833      0.800    0.816      0.791    0.977     0.881     parasitosis_intestinal
+                 0.800    0.029    0.800      0.800    0.800      0.771    0.976     0.915     traqueobronquitis_infecciosa
+                 0.640    0.029    0.762      0.640    0.696      0.660    0.960     0.768     dermatitis_alergica
+                 0.840    0.000    1.000      0.840    0.913      0.906    0.994     0.975     leptospirosis
+Weighted Avg.    0.830    0.024    0.834      0.830    0.829      0.807    0.981     0.893     
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+ 22  1  0  0  2  0  0  0 |  a = parvovirosis
+  0 22  1  0  1  1  0  0 |  b = moquillo
+  0  0 24  0  0  1  0  0 |  c = rabia
+  0  0  1 21  0  0  3  0 |  d = otitis
+  3  0  1  0 20  0  1  0 |  e = parasitosis_intestinal
+  0  3  0  1  0 20  1  0 |  f = traqueobronquitis_infecciosa
+  0  0  0  7  1  1 16  0 |  g = dermatitis_alergica
+  2  0  0  0  0  2  0 21 |  h = leptospirosis

@@ -1,0 +1,28 @@
+JUnit version 4.13.2
+.Dataset generado: /tmp/junit6617533087846799642/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit12521811777942885025/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit11017419236229336433/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit6302483135763043661/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit9780049171141066025/dataset.arff (200 filas)
+Guardado /tmp/junit9780049171141066025/models/J48.model
+Guardado /tmp/junit9780049171141066025/models/NaiveBayes.model
+.Dataset generado: /tmp/junit18285728188872306883/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit11954389896184920102/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit2692893505135008995/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit13157134050249688840/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit8529485779384686892/dataset.arff (200 filas)
+.Dataset generado: /tmp/junit17940162861756649811/dataset.arff (200 filas)
+algoritmo,accuracy,precision_macro,recall_macro,f1_macro,precision_ponderada,recall_ponderado,f1_ponderado
+J48,0.700000,0.701221,0.700000,0.696176,0.701221,0.700000,0.696176
+NaiveBayes,0.830000,0.833654,0.830000,0.829347,0.833654,0.830000,0.829347
+Resultados y gráficas: /tmp/junit17940162861756649811/exp1
+algoritmo,accuracy,precision_macro,recall_macro,f1_macro,precision_ponderada,recall_ponderado,f1_ponderado
+J48,0.700000,0.701221,0.700000,0.696176,0.701221,0.700000,0.696176
+NaiveBayes,0.830000,0.833654,0.830000,0.829347,0.833654,0.830000,0.829347
+Resultados y gráficas: /tmp/junit17940162861756649811/exp2
+.Dataset generado: /tmp/junit8006665340768491072/dataset.arff (200 filas)
+
+Time: 0.614
+
+OK (12 tests)
+

@@ -1,0 +1,9 @@
+real/predicha,parvovirosis,moquillo,rabia,otitis,parasitosis_intestinal,traqueobronquitis_infecciosa,dermatitis_alergica,leptospirosis
+parvovirosis,16,0,1,0,4,0,1,3
+moquillo,1,18,2,1,1,1,1,0
+rabia,0,0,21,1,0,0,3,0
+otitis,0,1,3,21,0,0,0,0
+parasitosis_intestinal,5,1,1,0,16,0,1,1
+traqueobronquitis_infecciosa,0,1,0,1,0,20,3,0
+dermatitis_alergica,0,0,0,10,3,2,9,1
+leptospirosis,2,1,0,1,1,0,1,19

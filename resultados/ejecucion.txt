@@ -1,0 +1,55 @@
+=== Java 21: generar y comparar ===
+Dataset generado: target/regenerado.arff (200 filas)
+Dataset generado: IDÉNTICO al entregado
+=== Java 21: evaluar y entrenar ===
+algoritmo,accuracy,precision_macro,recall_macro,f1_macro,precision_ponderada,recall_ponderado,f1_ponderado
+J48,0.700000,0.701221,0.700000,0.696176,0.701221,0.700000,0.696176
+NaiveBayes,0.830000,0.833654,0.830000,0.829347,0.833654,0.830000,0.829347
+Resultados y gráficas: /home/user/maria_eduarda/resultados
+Guardado modelos/J48.model
+Guardado modelos/NaiveBayes.model
+No mencionados = ausentes. Modelo: NaiveBayes
+Clase sugerida por el modelo: parvovirosis
+
+Distribución del modelo (NO riesgo clínico ni certeza diagnóstica):
+parvovirosis                    99.25 %
+moquillo                         0.25 %
+rabia                            0.00 %
+otitis                           0.00 %
+parasitosis_intestinal           0.38 %
+traqueobronquitis_infecciosa     0.00 %
+dermatitis_alergica              0.00 %
+leptospirosis                    0.12 %
+
+Incluso un 100 % no confirma enfermedad; un 0 % no la descarta.
+
+DATOS SINTÉTICOS — SIN VALIDACIÓN CLÍNICA. No sustituye al veterinario.
+Ante signos neurológicos, sospecha de rabia/exposición, dificultad respiratoria, sangrado, ictericia o deterioro: atención veterinaria urgente, independientemente del resultado. Si sospecha rabia, evite contacto con saliva y mordeduras y contacte al veterinario/autoridad sanitaria.
+=== Java 11: evaluar y cargar modelo entrenado en 21 ===
+algoritmo,accuracy,precision_macro,recall_macro,f1_macro,precision_ponderada,recall_ponderado,f1_ponderado
+J48,0.700000,0.701221,0.700000,0.696176,0.701221,0.700000,0.696176
+NaiveBayes,0.830000,0.833654,0.830000,0.829347,0.833654,0.830000,0.829347
+Resultados y gráficas: /tmp/canino-java11
+CSV globales Java 11 y Java 21: IDÉNTICOS
+No mencionados = ausentes. Modelo: J48
+Clase sugerida por el modelo: traqueobronquitis_infecciosa
+
+Distribución del modelo (NO riesgo clínico ni certeza diagnóstica):
+parvovirosis                     0.00 %
+moquillo                         4.17 %
+rabia                            0.00 %
+otitis                           0.00 %
+parasitosis_intestinal           0.00 %
+traqueobronquitis_infecciosa    87.50 %
+dermatitis_alergica              8.33 %
+leptospirosis                    0.00 %
+
+Incluso un 100 % no confirma enfermedad; un 0 % no la descarta.
+
+DATOS SINTÉTICOS — SIN VALIDACIÓN CLÍNICA. No sustituye al veterinario.
+Ante signos neurológicos, sospecha de rabia/exposición, dificultad respiratoria, sangrado, ictericia o deterioro: atención veterinaria urgente, independientemente del resultado. Si sospecha rabia, evite contacto con saliva y mordeduras y contacte al veterinario/autoridad sanitaria.
+=== Errores esperados de CLI y entorno headless ===
+ERROR: Modelo no encontrado. Ejecute primero entrenar: no-existe.model
+exit=1 (esperado 1)
+ERROR: Swing requiere escritorio gráfico. Use los comandos entrenar/experimento/diagnosticar en este entorno.
+exit=1 (esperado 1)
