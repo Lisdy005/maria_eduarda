@@ -57,7 +57,17 @@ python3 scripts/verificar_resultados.py
 
 ## 5. Informe completo redactado
 
-[`docs/INFORME.md`](docs/INFORME.md): portada con marcadores de autor/institución, introducción, modelación formal, datos, revisión bibliográfica, arquitectura y diagrama, experimento con todas las tablas/gráficas, discusión, conclusiones, recomendaciones y referencias. No es solo un esquema.
+[`docs/INFORME.md`](docs/INFORME.md) (fuente), exportado y maquetado en [`docs/INFORME.pdf`](docs/INFORME.pdf) y [`docs/INFORME.docx`](docs/INFORME.docx) (Word, editable): portada con marcadores de autor/institución, introducción, modelación formal, datos, revisión bibliográfica, arquitectura y diagrama, experimento con todas las tablas/gráficas, discusión, conclusiones, recomendaciones y referencias. No es solo un esquema.
+
+Para regenerar el PDF y el Word después de cambiar el informe (requiere pandoc 3, Node con Playwright y la librería Python `pypdf`):
+
+```sh
+python3 scripts/actualizar_informe.py
+node scripts/informe/rasterizar.js
+python3 scripts/informe/exportar_informe.py
+```
+
+`rasterizar.js` convierte las gráficas SVG a PNG. Si además recibe la ruta a `mermaid.min.js`, vuelve a dibujar el diagrama de arquitectura. Al abrir el `.docx`, Word ofrece actualizar el índice: acepte.
 
 ## 6. Instrucciones paso a paso y lista de archivos
 

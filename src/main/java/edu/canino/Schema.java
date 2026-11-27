@@ -15,6 +15,9 @@ public final class Schema {
         "Pérdida de peso", "Sangre en heces", "Ictericia (color amarillo)", "Sed aumentada"};
     public static final String[] DISEASES = {"parvovirosis", "moquillo", "rabia", "otitis",
         "parasitosis_intestinal", "traqueobronquitis_infecciosa", "dermatitis_alergica", "leptospirosis"};
+    /** Nombres legibles de las clases, en el mismo orden que {@link #DISEASES}. */
+    public static final String[] DISEASE_LABELS = {"Parvovirosis", "Moquillo", "Rabia", "Otitis",
+        "Parasitosis intestinal", "Traqueobronquitis infecciosa", "Dermatitis alérgica", "Leptospirosis"};
     public static final String WARNING = "DATOS SINTÉTICOS — SIN VALIDACIÓN CLÍNICA. No sustituye al veterinario.";
     public static final String URGENT = "Ante signos neurológicos, sospecha de rabia/exposición, dificultad respiratoria, "
         + "sangrado, ictericia o deterioro: atención veterinaria urgente, independientemente del resultado. "

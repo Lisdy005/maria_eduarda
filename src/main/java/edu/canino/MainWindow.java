@@ -66,8 +66,7 @@ public final class MainWindow extends JFrame {
     static final Color MUTED = new Color(0x5F7176);
 
     /** Nombres legibles de las clases, en el orden de {@link Schema#DISEASES}. */
-    static final String[] DISEASE_LABELS = {"Parvovirosis", "Moquillo", "Rabia", "Otitis",
-        "Parasitosis intestinal", "Traqueobronquitis infecciosa", "Dermatitis alérgica", "Leptospirosis"};
+    static final String[] DISEASE_LABELS = Schema.DISEASE_LABELS;
 
     /** Agrupación clínica de los 15 síntomas (índices de {@link Schema#SYMPTOMS}). */
     private static final String[] GROUPS = {"Generales", "Digestivo", "Respiratorio", "Neurológico", "Piel y oído"};

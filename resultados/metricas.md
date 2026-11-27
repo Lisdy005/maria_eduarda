@@ -1,6 +1,6 @@
 # Resultados ejecutados automáticamente
 
-Weka 3.8.5; Java 21.0.8. Dataset: 200 filas. SHA-256: `64d2ba7e29beb5ecd88934640822fe1e964f72681d668e60d4e897b16a938924`.
+Weka 3.8.5; Java 21.0.13.1. Dataset: 200 filas. SHA-256: `64d2ba7e29beb5ecd88934640822fe1e964f72681d668e60d4e897b16a938924`.
 
 CV estratificada de 10 pliegues, semilla 42, mismos pliegues para ambos modelos. No se ajustaron hiperparámetros con estos resultados. Las métricas por clase agrupan las 200 predicciones fuera de muestra. Métricas no definidas se registran NA en CSV y se tratan como 0 para macro.
 

@@ -12,13 +12,21 @@ Se enumeran los archivos entregados, no las carpetas temporales de compilación.
 |`docs/ARCHIVOS.md`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/CALENDARIO.md`|7 · Calendario de fases, tareas e hitos.|
 |`docs/DATOS.md`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/INFORME.docx`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/INFORME.md`|5 · Informe completo redactado, con tablas y gráficas.|
+|`docs/INFORME.pdf`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/INFORME.plantilla.md`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/LGPL-2.1.txt`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/LICENCIAS-WEKA-LIB.txt`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/PRESENTACION.pptx`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/PRUEBAS.md`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/TERCEROS.md`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/img/arquitectura.png`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/img/graficas/clases_J48.png`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/img/graficas/clases_NaiveBayes.png`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/img/graficas/comparacion.png`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/img/graficas/confusion_J48.png`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/img/graficas/confusion_NaiveBayes.png`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/img/gui_1_entrenar.png`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/img/gui_2_orientacion.png`|Documentación, contrato de datos, plantilla o licencia.|
 |`entrega/SHA256SUMS.txt`|Manifiesto de integridad SHA-256.|
@@ -56,6 +64,9 @@ Se enumeran los archivos entregados, no las carpetas temporales de compilación.
 |`scripts/actualizar_informe.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/crear_entrega.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/empaquetar_jar.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
+|`scripts/informe/exportar_informe.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
+|`scripts/informe/imprimir_pdf.js`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
+|`scripts/informe/rasterizar.js`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/presentacion/generar_presentacion.js`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/verificar_resultados.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`src/main/java/edu/canino/Charts.java`|3 · Experimento, métricas y gráficas.|

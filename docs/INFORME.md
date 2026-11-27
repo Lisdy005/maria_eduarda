@@ -125,7 +125,7 @@ Se calcula \(accuracy=\sum_c TP_c/N\). Para cada clase se aplica la estrategia u
 
 Las matrices agregan los diez pliegues: filas = clase real y columnas = clase predicha. Los CSV guardan proporciones 0–1, no porcentajes. `predicciones.csv` permite auditar errores y distribuciones; `asignacion_pliegues.csv` permite reconstruir las particiones. Las gráficas de barras usan escala 0–1 y los mapas de confusión muestran recuentos. Se informa accuracy global y P/R/F1 por clase, no una «accuracy por clase» ambigua.
 
-Weka 3.8.5; Java 21.0.8. Dataset: 200 filas. SHA-256: `64d2ba7e29beb5ecd88934640822fe1e964f72681d668e60d4e897b16a938924`.
+Weka 3.8.5; Java 21.0.13.1. Dataset: 200 filas. SHA-256: `64d2ba7e29beb5ecd88934640822fe1e964f72681d668e60d4e897b16a938924`.
 
 CV estratificada de 10 pliegues, semilla 42, mismos pliegues para ambos modelos. No se ajustaron hiperparámetros con estos resultados. Las métricas por clase agrupan las 200 predicciones fuera de muestra. Métricas no definidas se registran NA en CSV y se tratan como 0 para macro.
 
