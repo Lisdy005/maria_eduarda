@@ -16,6 +16,7 @@ Se enumeran los archivos entregados, no las carpetas temporales de compilación.
 |`docs/INFORME.plantilla.md`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/LGPL-2.1.txt`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/LICENCIAS-WEKA-LIB.txt`|Documentación, contrato de datos, plantilla o licencia.|
+|`docs/PRESENTACION.pptx`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/PRUEBAS.md`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/TERCEROS.md`|Documentación, contrato de datos, plantilla o licencia.|
 |`docs/img/gui_1_entrenar.png`|Documentación, contrato de datos, plantilla o licencia.|
@@ -55,6 +56,7 @@ Se enumeran los archivos entregados, no las carpetas temporales de compilación.
 |`scripts/actualizar_informe.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/crear_entrega.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/empaquetar_jar.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
+|`scripts/presentacion/generar_presentacion.js`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`scripts/verificar_resultados.py`|6 · Utilidad reproducible de auditoría/documentación/empaquetado.|
 |`src/main/java/edu/canino/Charts.java`|3 · Experimento, métricas y gráficas.|
 |`src/main/java/edu/canino/DataGenerator.java`|2 · Generador determinista que produjo el ARFF.|

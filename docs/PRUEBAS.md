@@ -53,7 +53,7 @@ Si no dispone de Maven, los mismos comandos de la aplicación se pueden ejecutar
 1. Desde la raíz, ejecutar `java -jar entrega/diagnosticador-canino.jar gui` y confirmar que se ven el aviso sintético y la advertencia de urgencia.
 2. En **Entrenar**, examinar `dataset.arff`, elegir una carpeta temporal, pulsar entrenar y confirmar. Deben aparecer ambos `.model` y ambos `.txt`; la ventana debe poder repintarse durante el trabajo.
 3. Elegir un ARFF inexistente o incompatible: debe verse un error legible y no un mensaje de éxito.
-4. En **Orientación sintética**, seleccionar el modelo J48 recién creado. Probar sin aceptar las limitaciones y luego sin marcar signos: la app debe impedir el cálculo.
+4. En **Diagnosticar**, elegir «J48 · árbol de decisión» en el selector de modelo. Probar sin aceptar las limitaciones y luego sin marcar signos: la app debe impedir el cálculo.
 5. Aceptar la codificación, marcar fiebre, vómito, diarrea, letargo, pérdida de apetito y sangre en heces. Debe mostrarse una clase y la distribución de las ocho clases, con advertencias.
 6. Repetir usando `NaiveBayes.model`. Comprobar que la salida identifica el algoritmo elegido y que se recarga del archivo seleccionado.
 7. Elegir una ruta inexistente: debe mostrarse el error sin presentar una nueva predicción como válida. No probar archivos maliciosos o desconocidos.

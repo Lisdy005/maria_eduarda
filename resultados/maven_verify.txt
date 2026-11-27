@@ -10,7 +10,7 @@
 [INFO] --- surefire:3.5.2:test (default-test) @ diagnosticador-canino ---
 [INFO] -------------------------------------------------------
 [INFO] -------------------------------------------------------
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 s -- in edu.canino.ProjectTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.399 s -- in edu.canino.ProjectTest
 [INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- jar:3.4.1:jar (default-jar) @ diagnosticador-canino ---
 [INFO] Building jar: target/diagnosticador-canino.jar
@@ -18,5 +18,5 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.095 s
+[INFO] Total time:  5.235 s
 [INFO] ------------------------------------------------------------------------

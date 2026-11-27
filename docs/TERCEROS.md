@@ -6,7 +6,7 @@ El código de este proyecto se distribuye bajo GNU GPL versión 3, texto complet
 
 ## Construcción Maven preferida
 
-`pom.xml` declara exactamente **`nz.ac.waikato.cms.weka:weka-stable:3.8.5`**, no una versión aproximada. Maven resuelve también sus dependencias transitivas. JUnit 4.13.2 es una dependencia exclusiva de pruebas y no se incluye en el JAR Maven final. Maven Compiler, Surefire y Shade tienen versiones explícitas. Weka se distribuye bajo GPL v3; JUnit 4 bajo Eclipse Public License 1.0. Otras bibliotecas conservan sus licencias y avisos en los artefactos Maven.
+`pom.xml` declara exactamente **`nz.ac.waikato.cms.weka:weka-stable:3.8.5`**, no una versión aproximada. Maven resuelve también sus dependencias transitivas. **FlatLaf 3.5.4** (`com.formdev:flatlaf`, licencia Apache 2.0, <https://github.com/JFormDesigner/FlatLaf>) proporciona el aspecto visual de la interfaz Swing y se incluye en el JAR. JUnit 4.13.2 es una dependencia exclusiva de pruebas y no se incluye en el JAR Maven final. Maven Compiler, Surefire y Shade tienen versiones explícitas. Weka se distribuye bajo GPL v3; JUnit 4 bajo Eclipse Public License 1.0. Otras bibliotecas conservan sus licencias y avisos en los artefactos Maven.
 
 Fuente estable de Weka: <https://github.com/Waikato/weka-3.8>. Estado de publicación 3.8.5: commit `91df467a5d042561b8b6f052b038144419f32ba2` (actualización previa a la publicación Maven). Sus fuentes pueden obtenerse por Git o como archivo de ese commit. No se modificó el código de Weka.
 
@@ -26,7 +26,7 @@ El JAR de distribución incorpora recursos anidados `mtj.jar`, `core.jar` y `arp
 
 Los avisos originales de bibliotecas de esa distribución se adjuntan en `docs/LICENCIAS-WEKA-LIB.txt`. Incluyen Bounce (licencia de tipo BSD), core/netlib (BSD), ARPACK (BSD) y MTJ (LGPL 2.1 o posterior). Los textos GPL-3 y LGPL-2.1 se conservan en `LICENSE` y `docs/LGPL-2.1.txt`. Las fuentes de componentes de terceros están disponibles en los proyectos Weka, <https://github.com/fommil/netlib-java>, <https://github.com/fommil/matrix-toolkits-java> y <https://github.com/opencollab/arpack-ng>. Los recursos originales de licencia dentro de cada archivo no se sustituyen por avisos del proyecto.
 
-`entrega/diagnosticador-canino.jar` se ensambló con `scripts/empaquetar_jar.py` a partir de nuestras clases compiladas para Java 11 y esos dos JAR de entrada. Este ejecutable está pensado para las funciones de este proyecto (ARFF, J48, Naive Bayes y Swing), no para ofrecer todas las funciones opcionales de Weka. `mvn clean verify` produce el equivalente de la aplicación con resolución transitiva y Maven Shade, en `target/diagnosticador-canino.jar`. Los dos procesos no prometen identidad binaria del archivo empaquetado; sí se comprueba identidad del dataset y de las métricas.
+La primera versión de `entrega/diagnosticador-canino.jar` se ensambló con `scripts/empaquetar_jar.py` a partir de esos JAR. **La versión actual es el JAR producido por `mvn clean verify` con Maven Shade** (Weka 3.8.5 resuelto desde Maven Central, más FlatLaf), copiado de `target/` a `entrega/`. Este ejecutable está pensado para las funciones de este proyecto (ARFF, J48, Naive Bayes y Swing), no para ofrecer todas las funciones opcionales de Weka. `mvn clean verify` produce el equivalente de la aplicación con resolución transitiva y Maven Shade, en `target/diagnosticador-canino.jar`. Los dos procesos no prometen identidad binaria del archivo empaquetado; sí se comprueba identidad del dataset y de las métricas.
 
 ## Herramientas usadas solo durante construcción/pruebas
 

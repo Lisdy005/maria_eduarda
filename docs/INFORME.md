@@ -69,7 +69,7 @@ La literatura veterinaria [4–6] fundamenta únicamente la **selección cualita
 
 ### 3.4. Proyecto de programación
 
-Se aplicó **separación de responsabilidades**, contrato de datos único, validación en los límites, pruebas reproducibles y registro de procedencia. Maven fija versiones de herramientas y dependencias; Java 11 es el nivel de compilación y Weka 3.8.5 la biblioteca solicitada. Swing se eligió porque forma parte del escritorio Java, evita una instalación adicional de JavaFX y permite ejecutar el entrenamiento sin bloquear la interfaz mediante `SwingWorker`.
+Se aplicó **separación de responsabilidades**, contrato de datos único, validación en los límites, pruebas reproducibles y registro de procedencia. Maven fija versiones de herramientas y dependencias; Java 11 es el nivel de compilación y Weka 3.8.5 la biblioteca solicitada. Swing se eligió porque forma parte del escritorio Java, evita una instalación adicional de JavaFX y permite ejecutar el entrenamiento sin bloquear la interfaz mediante `SwingWorker`. El aspecto visual usa **FlatLaf** (Apache 2.0) con la paleta del proyecto: los síntomas se agrupan por sistema (generales, digestivo, respiratorio, neurológico, piel y oído), el modelo se elige en un selector y el resultado se presenta como una tarjeta con la clase sugerida y barras de probabilidad para las ocho clases. Si FlatLaf no pudiera cargarse, la aplicación sigue funcionando con el aspecto estándar de Swing.
 
 La arquitectura consta de los siguientes módulos/clases:
 
@@ -115,7 +115,7 @@ La primera construcción se realizó con ECJ 3.16 y nivel `-11` por restriccione
 
 ![Figura 1. Pestaña de orientación: checkboxes de síntomas, clase sugerida y distribución entre las ocho clases (Naive Bayes).](img/gui_2_orientacion.png)
 
-*Figura 1. Interfaz Swing en modo diagnosticar, capturada durante la prueba automatizada. Datos sintéticos; no es un diagnóstico clínico.*
+*Figura 1. Interfaz Swing (FlatLaf) en modo diagnosticar, capturada durante la prueba automatizada. Datos sintéticos; no es un diagnóstico clínico.*
 
 ### 3.5. Descripción del experimento
 

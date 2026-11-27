@@ -83,7 +83,7 @@ java -Dfile.encoding=UTF-8 -jar entrega/diagnosticador-canino.jar entrenar datas
 java -Dfile.encoding=UTF-8 -jar entrega/diagnosticador-canino.jar gui
 ```
 
-En **Entrenar**, seleccione el ARFF y la carpeta de salida, pulse el botón y confirme. En **Orientación sintética**, seleccione `modelos/NaiveBayes.model` o `modelos/J48.model`, marque signos, acepte las limitaciones y pulse el botón. Cada cálculo carga el modelo seleccionado del disco y muestra la clase y los ocho porcentajes. Marcado significa presente; desmarcado significa ausente, **no desconocido**. No se calcula con todos los checkboxes vacíos: no existe clase sano. Se muestran advertencias de urgencia con independencia de la clase predicha. El diálogo de entrenamiento no bloquea el hilo de la interfaz.
+En **Entrenar**, seleccione el ARFF y la carpeta de salida, pulse el botón y confirme. En **Diagnosticar**, elija el modelo en el selector (Naive Bayes, J48 u otro archivo `.model`), marque los síntomas, agrupados por sistema, acepte las limitaciones y pulse el botón. Cada cálculo carga el modelo seleccionado del disco y muestra la clase sugerida en una tarjeta y los ocho porcentajes como barras. El botón **Limpiar** desmarca todo. Marcado significa presente; desmarcado significa ausente, **no desconocido**. No se calcula con todos los checkboxes vacíos: no existe clase sano. Se muestran advertencias de urgencia con independencia de la clase predicha. El diálogo de entrenamiento no bloquea el hilo de la interfaz.
 
 6. Alternativa en consola (también sirve en servidores sin pantalla):
 

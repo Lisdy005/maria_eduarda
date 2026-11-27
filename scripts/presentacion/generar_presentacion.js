@@ -238,14 +238,14 @@ async function icon(Comp, color = "FFFFFF") {
   // ---------- 7. App ----------
   s = pres.addSlide({ masterName: "CONTENIDO", sectionTitle: "Desarrollo" });
   s.addText("La aplicación funcional", { placeholder: "title" });
-  const iw = 6.9, ih = iw * 850 / 1050;
-  s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: 1.4, w: iw, h: ih, fill: { color: C.background1 }, line: { color: C.accent3, width: 0.75 }, shadow: { type: "outer", color: "000000", opacity: 0.18, blur: 8, offset: 3, angle: 90 }, objectName: "Marco captura" });
-  s.addImage({ path: SHOT, x: 0.6, y: 1.4, w: iw, h: ih, altText: "Captura de la pestaña de orientación: síntomas marcados y distribución de probabilidad con parvovirosis al 99,25 %", objectName: "Captura app" });
+  const iw = 6.9, ih = iw * 820 / 1200;
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: 1.75, w: iw, h: ih, fill: { color: C.background1 }, line: { color: C.accent3, width: 0.75 }, shadow: { type: "outer", color: "000000", opacity: 0.18, blur: 8, offset: 3, angle: 90 }, objectName: "Marco captura" });
+  s.addImage({ path: SHOT, x: 0.6, y: 1.75, w: iw, h: ih, altText: "Captura de la pestaña Diagnosticar: síntomas agrupados por sistema y barras de probabilidad con Parvovirosis al 99,2 %", objectName: "Captura app" });
   const appSteps = [
     ["1", "Entrenar", "Lee el ARFF, entrena J48 y Naive Bayes y guarda los .model"],
-    ["2", "Marcar síntomas", "15 casillas: marcada = presente, vacía = ausente"],
+    ["2", "Marcar síntomas", "15 casillas agrupadas por sistema; vacía = ausente"],
     ["3", "Calcular", "Carga el modelo del disco y predice"],
-    ["4", "Resultado", "Enfermedad sugerida y % de las 8 clases, con avisos"],
+    ["4", "Resultado", "Tarjeta con la enfermedad y barras de las 8 clases"],
   ];
   appSteps.forEach(([n, h, d], i) => {
     const y = 1.45 + i * 1.3;
