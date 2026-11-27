@@ -1,0 +1,3 @@
+OK J48: 200 predicciones OOF; accuracy=70.00%; matriz y P/R/F1 consistentes
+OK NaiveBayes: 200 predicciones OOF; accuracy=83.00%; matriz y P/R/F1 consistentes
+OK estratificación, particiones emparejadas, probabilidades y cobertura de filas

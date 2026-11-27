@@ -1,0 +1,45 @@
+J48 pruned tree
+------------------
+
+ictericia = 0
+|   signos_neurologicos = 0
+|   |   molestia_oido = 0
+|   |   |   tos = 0
+|   |   |   |   sangre_heces = 0
+|   |   |   |   |   diarrea = 0
+|   |   |   |   |   |   salivacion_excesiva = 0
+|   |   |   |   |   |   |   fiebre = 0: dermatitis_alergica (16.0/5.0)
+|   |   |   |   |   |   |   fiebre = 1: moquillo (2.0/1.0)
+|   |   |   |   |   |   salivacion_excesiva = 1: rabia (3.0/1.0)
+|   |   |   |   |   diarrea = 1: parasitosis_intestinal (21.0/5.0)
+|   |   |   |   sangre_heces = 1
+|   |   |   |   |   vomito = 0
+|   |   |   |   |   |   letargo = 0: parasitosis_intestinal (2.0)
+|   |   |   |   |   |   letargo = 1
+|   |   |   |   |   |   |   perdida_apetito = 0: parasitosis_intestinal (2.0)
+|   |   |   |   |   |   |   perdida_apetito = 1: parvovirosis (2.0)
+|   |   |   |   |   vomito = 1: parvovirosis (18.0/1.0)
+|   |   |   tos = 1
+|   |   |   |   diarrea = 0: traqueobronquitis_infecciosa (24.0/3.0)
+|   |   |   |   diarrea = 1: moquillo (5.0/2.0)
+|   |   molestia_oido = 1
+|   |   |   tos = 0
+|   |   |   |   salivacion_excesiva = 0: otitis (32.0/10.0)
+|   |   |   |   salivacion_excesiva = 1: moquillo (2.0/1.0)
+|   |   |   tos = 1: moquillo (2.0/1.0)
+|   signos_neurologicos = 1
+|   |   tos = 0
+|   |   |   salivacion_excesiva = 0: otitis (4.0/1.0)
+|   |   |   salivacion_excesiva = 1: rabia (20.0/2.0)
+|   |   tos = 1
+|   |   |   letargo = 0: rabia (4.0/1.0)
+|   |   |   letargo = 1: moquillo (14.0)
+ictericia = 1
+|   sed_aumentada = 0
+|   |   fiebre = 0: rabia (2.0/1.0)
+|   |   fiebre = 1: parvovirosis (3.0/1.0)
+|   sed_aumentada = 1: leptospirosis (22.0/1.0)
+
+Number of Leaves  : 	20
+
+Size of the tree : 	39
